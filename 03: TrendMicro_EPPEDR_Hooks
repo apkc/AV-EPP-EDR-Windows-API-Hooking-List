@@ -1,6 +1,5 @@
 Hooks redirect to "EDR hooking.dll" tmmon64.dll
 
-
 >>Hooks in ntdll.dll<<
 [-] LdrUnloadDll 
 [-] LdrLoadDll 
