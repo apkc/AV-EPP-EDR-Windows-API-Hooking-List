@@ -1,4 +1,4 @@
-Hooks in ntdll.dll
+>>Hooks in ntdll.dll<<
 
 [-] ntdll.dll!LdrLoadDll [JMP]
     [*] 00007FF827606A10  jmp 0x00007FF7E7670418
@@ -45,7 +45,9 @@ Hooks in ntdll.dll
 [-] ntdll.dll!KiUserApcDispatcher [JMP]
     [*] 00007FF827690D80  jmp 0x00007FF7E76707D8
     
-# **Hooks in KernelBase.dll**    
+    
+>>Hooks in KernelBase.dll<<
+
 [-] KernelBase.dll!CreateProcessInternalW [JMP]
     [*] 00007FF8251BA040  jmp 0x00007FF7E7670B38
 [-] KernelBase.dll!CopyFileExW [JMP]
