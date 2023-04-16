@@ -1,61 +1,35 @@
 Hooks redirect to EDR hooking.dll umppc*****.dll for example umppc16606.dll
 
 >>Hooks in ntdll.dll<<
-[-] ntdll.dll!NtDeviceIoControlFile [JMP]
-    [*] 00007FF9A62ED133  jmp 0x00007FF9A636ADCA
-[-] ntdll.dll!NtSetInformationThread [JMP]
-    [*] 00007FF9A62ED1F3  jmp 0x00007FF9A636ADCE
-[-] ntdll.dll!NtAllocateVirtualMemory [JMP]
-    [*] 00007FF9A62ED353  jmp 0x00007FF9A636ADD4
-[-] ntdll.dll!NtSetInformationProcess [JMP]
-    [*] 00007FF9A62ED3D3  jmp 0x00007FF9A636ADCD
-[-] ntdll.dll!NtQueryInformationThread [JMP]
-    [*] 00007FF9A62ED4F3  jmp 0x00007FF9A636ADCF
-[-] ntdll.dll!NtMapViewOfSection [JMP]
-    [*] 00007FF9A62ED553  jmp 0x00007FF9A636ADDA
-[-] ntdll.dll!NtUnmapViewOfSection [JMP]
-    [*] 00007FF9A62ED593  jmp 0x00007FF9A636ADD9
-[-] ntdll.dll!NtWriteVirtualMemory [JMP]
-    [*] 00007FF9A62ED793  jmp 0x00007FF9A636ADD1
-[-] ntdll.dll!NtReadVirtualMemory [JMP]
-    [*] 00007FF9A62ED833  jmp 0x00007FF9A636ADD2
-[-] ntdll.dll!NtQueueApcThread [JMP]
-    [*] 00007FF9A62ED8F3  jmp 0x00007FF9A636ADCC
-[-] ntdll.dll!NtProtectVirtualMemory [JMP]
-    [*] 00007FF9A62EDA53  jmp 0x00007FF9A636ADD3
-[-] ntdll.dll!NtResumeThread [JMP]
-    [*] 00007FF9A62EDA93  jmp 0x00007FF9A636ADD5
-[-] ntdll.dll!NtAllocateVirtualMemoryEx [JMP]
-    [*] 00007FF9A62EDF03  jmp 0x00007FF9A636ADC8
-[-] ntdll.dll!NtCreateMutant [JMP]
-    [*] 00007FF9A62EE6C3  jmp 0x00007FF9A636ADC6
-[-] ntdll.dll!NtGetContextThread [JMP]
-    [*] 00007FF9A62EEEA3  jmp 0x00007FF9A636ADD8
-[-] ntdll.dll!NtMapViewOfSectionEx [JMP]
-    [*] 00007FF9A62EF2E3  jmp 0x00007FF9A636ADC7
-[-] ntdll.dll!NtQueueApcThreadEx [JMP]
-    [*] 00007FF9A62EFD03  jmp 0x00007FF9A636ADCB
-[-] ntdll.dll!NtSetContextThread [JMP]
-    [*] 00007FF9A62F01C3  jmp 0x00007FF9A636ADD7
-[-] ntdll.dll!NtSuspendThread [JMP]
-    [*] 00007FF9A62F07E3  jmp 0x00007FF9A636ADD6
-[-] ntdll.dll!NtUnmapViewOfSectionEx [JMP]
-    [*] 00007FF9A62F09E3  jmp 0x00007FF9A636ADD0
+[-] NtDeviceIoControlFile 
+[-] NtSetInformationThread 
+[-] NtAllocateVirtualMemory 
+[-] NtSetInformationProcess 
+[-] NtQueryInformationThread 
+[-] NtMapViewOfSection 
+[-] NtUnmapViewOfSection 
+[-] NtWriteVirtualMemory 
+[-] NtReadVirtualMemory 
+[-] NtQueueApcThread 
+[-] NtProtectVirtualMemory 
+[-] NtResumeThread 
+[-] NtAllocateVirtualMemoryEx 
+[-] NtCreateMutant 
+[-] NtGetContextThread 
+[-] NtMapViewOfSectionEx 
+[-] NtQueueApcThreadEx 
+[-] NtSetContextThread 
+[-] NtSuspendThread 
+[-] NtUnmapViewOfSectionEx 
     
 >>Hooks in win32u.dll<<    
-[-] win32u.dll!NtUserSetProp [JMP]
-    [*] 00007FF9A3BD19B3  jmp 0x00007FF9A3BDB6D2
-[-] win32u.dll!NtUserSetWindowLong [JMP]
-    [*] 00007FF9A3BD1B93  jmp 0x00007FF9A3BDB6D1
-[-] win32u.dll!NtUserSetWindowsHookEx [JMP]
-    [*] 00007FF9A3BD2153  jmp 0x00007FF9A3BDB6D3
-[-] win32u.dll!NtUserSetWindowsHookAW [JMP]
-    [*] 00007FF9A3BD2EB3  jmp 0x00007FF9A3BDB6D4
-[-] win32u.dll!NtGdiAddFontMemResourceEx [JMP]
-    [*] 00007FF9A3BD3093  jmp 0x00007FF9A3BDB6CE
-[-] win32u.dll!NtGdiAddFontResourceW [JMP]
-    [*] 00007FF9A3BD3FF3  jmp 0x00007FF9A3BDB6CF
-[-] win32u.dll!NtGdiAddRemoteFontToDC [JMP]
-    [*] 00007FF9A3BD4033  jmp 0x00007FF9A3BDB6CD
-[-] win32u.dll!NtUserSetWindowLongPtr [JMP]
-    [*] 00007FF9A3BDB493  jmp 0x00007FF9A3BDB6D0
+[-] NtUserSetProp 
+[-] NtUserSetWindowLong 
+[-] NtUserSetWindowsHookEx 
+[-] NtUserSetWindowsHookAW 
+[-] NtGdiAddFontMemResourceEx 
+[-] NtGdiAddFontResourceW 
+[-] NtGdiAddRemoteFontToDC 
+[-] NtUserSetWindowLongPtr 
+    
+Total: 28 hooks
