@@ -1,3 +1,5 @@
+Hooks redirect to EDR hooking.dll inprocessclient64.dll
+
 >>Hooks in ntdll.dll<<
 [-] ntdll.dll!LdrLoadDll [JMP]
     [*] 00007FF827606A10  jmp 0x00007FF7E7670418
