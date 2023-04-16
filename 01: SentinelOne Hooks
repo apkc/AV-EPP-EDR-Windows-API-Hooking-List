@@ -1,140 +1,88 @@
 Hooks redirect to EDR hooking.dll inprocessclient64.dll
 
 >>Hooks in ntdll.dll<<
-[-] ntdll.dll!LdrLoadDll [JMP]
-    [*] 00007FF827606A10  jmp 0x00007FF7E7670418
-[-] ntdll.dll!RtlAddVectoredExceptionHandler [JMP]
-    [*] 00007FF827671780  jmp 0x00007FF7E76708F8
-[-] ntdll.dll!NtSetInformationThread [JMP]
-    [*] 00007FF82768D1F0  jmp 0x00007FF7E76705F8
-[-] ntdll.dll!NtSetInformationProcess [JMP]
-    [*] 00007FF82768D3D0  jmp 0x00007FF7E76704D8
-[-] ntdll.dll!NtFreeVirtualMemory [JMP]
-    [*] 00007FF82768D410  jmp 0x00007FF7E7670178
-[-] ntdll.dll!NtOpenProcess [JMP]
-    [*] 00007FF82768D510  jmp 0x00007FF7E7670238
-[-] ntdll.dll!NtMapViewOfSection [JMP]
-    [*] 00007FF82768D550  jmp 0x00007FF7E76701D8
-[-] ntdll.dll!NtUnmapViewOfSection [JMP]
-    [*] 00007FF82768D590  jmp 0x00007FF7E7670298
-[-] ntdll.dll!NtTerminateProcess [JMP]
-    [*] 00007FF82768D5D0  jmp 0x00007FF7E7670898
-[-] ntdll.dll!NtQuerySystemInformation [JMP]
-    [*] 00007FF82768D710  jmp 0x00007FF7E7670538
-[-] ntdll.dll!NtWriteVirtualMemory [JMP]
-    [*] 00007FF82768D790  jmp 0x00007FF7E76702F8
-[-] ntdll.dll!NtReadVirtualMemory [JMP]
-    [*] 00007FF82768D830  jmp 0x00007FF7E7670658
-[-] ntdll.dll!NtQueueApcThread [JMP]
-    [*] 00007FF82768D8F0  jmp 0x00007FF7E76706B8
-[-] ntdll.dll!NtResumeThread [JMP]
-    [*] 00007FF82768DA90  jmp 0x00007FF7E76703B8
-[-] ntdll.dll!NtCreateThreadEx [JMP]
-    [*] 00007FF82768E880  jmp 0x00007FF7E7670778
-[-] ntdll.dll!NtCreateUserProcess [JMP]
-    [*] 00007FF82768E960  jmp 0x00007FF7E7670838
-[-] ntdll.dll!NtLoadDriver [JMP]
-    [*] 00007FF82768F100  jmp 0x00007FF7E7670358
-[-] ntdll.dll!NtMapUserPhysicalPages [JMP]
-    [*] 00007FF82768F2C0  jmp 0x00007FF7E7670958
-[-] ntdll.dll!NtQuerySystemInformationEx [JMP]
-    [*] 00007FF82768FC80  jmp 0x00007FF7E7670598
-[-] ntdll.dll!NtQueueApcThreadEx [JMP]
-    [*] 00007FF82768FD00  jmp 0x00007FF7E7670718
-[-] ntdll.dll!NtSetContextThread [JMP]
-    [*] 00007FF8276901C0  jmp 0x00007FF7E7670478
-[-] ntdll.dll!KiUserApcDispatcher [JMP]
-    [*] 00007FF827690D80  jmp 0x00007FF7E76707D8
+[-] LdrLoadDll 
+[-] RtlAddVectoredExceptionHandler 
+[-] NtSetInformationThread 
+[-] NtSetInformationProcess 
+[-] NtFreeVirtualMemory 
+[-] NtOpenProcess 
+[-] NtMapViewOfSection 
+[-] NtUnmapViewOfSection 
+[-] NtTerminateProcess 
+[-] NtQuerySystemInformation 
+[-] NtWriteVirtualMemory 
+[-] NtReadVirtualMemory 
+[-] NtQueueApcThread 
+[-] NtResumeThread 
+[-] NtCreateThreadEx 
+[-] NtCreateUserProcess 
+[-] NtLoadDriver 
+[-] NtMapUserPhysicalPages 
+[-] NtQuerySystemInformationEx 
+[-] NtQueueApcThreadEx 
+[-] NtSetContextThread 
+[-] KiUserApcDispatcher 
     
     
 >>Hooks in KernelBase.dll<<
-[-] KernelBase.dll!CreateProcessInternalW [JMP]
-    [*] 00007FF8251BA040  jmp 0x00007FF7E7670B38
-[-] KernelBase.dll!CopyFileExW [JMP]
-    [*] 00007FF8251C7470  jmp 0x00007FF7E7670AD8
-[-] KernelBase.dll!LoadLibraryA [JMP]
-    [*] 00007FF8251DF820  jmp 0x00007FF7E7670A78
-[-] KernelBase.dll!UnhandledExceptionFilter [JMP]
-    [*] 00007FF825277FE0  jmp 0x00007FF7E7670A18
+[-] CreateProcessInternalW 
+[-] CopyFileExW 
+[-] LoadLibraryA 
+[-] UnhandledExceptionFilter 
     
     
 >>Hooks in combase.dll<<    
-[-] combase.dll!CoGetInstanceFromIStorage [JMP]
-    [*] 00007FF8270066C0  jmp 0x00007FF7E7671438
+[-] CoGetInstanceFromIStorage 
+    
     
     
 >>Hooks in crypt32.dll<<    
-[-] crypt32.dll!CryptUnprotectData [JMP]
-    [*] 00007FF824FC4E70  jmp 0x00007FF7E76714F8
+[-] CryptUnprotectData 
     
     
 >>Hooks in ole32.dll<<    
-[-] ole32.dll!CoGetObject [JMP]
-    [*] 00007FF826A6E180  jmp 0x00007FF7E76713D8
+[-] CoGetObject 
     
     
 >>Hooks in samcli.dll<<
-[-] samcli.dll!NetUserAdd [JMP]
-    [*] 00007FF81D11D230  jmp 0x00007FF7E7671618
+[-] NetUserAdd 
     
 
 >>Hooks in shell32.dll<<
-[-] shell32.dll!Shell_NotifyIconW [JMP]
-    [*] 00007FF825A7AC60  jmp 0x00007FF7E7671498
+[-] Shell_NotifyIconW 
     
     
 **Hooks in sspicli.dll**
-[-] sspicli.dll!InitializeSecurityContextW [JMP]
-    [*] 00007FF824BC1350  jmp 0x00007FF7E76715B8
-[-] sspicli.dll!LsaCallAuthenticationPackage [JMP]
-    [*] 00007FF824BC2E80  jmp 0x00007FF7E7671558
+[-] InitializeSecurityContextW 
+[-] LsaCallAuthenticationPackage 
     
     
 **Hooks in user32.dll**   
-[-] user32.dll!CreateWindowExA [JMP]
-    [*] 00007FF827343C10  jmp 0x00007FF7E7670FB8
-[-] user32.dll!CreateWindowExW [JMP]
-    [*] 00007FF827347720  jmp 0x00007FF7E7670F58
-[-] user32.dll!PeekMessageA [JMP]
-    [*] 00007FF827349980  jmp 0x00007FF7E7671198
-[-] user32.dll!PeekMessageW [JMP]
-    [*] 00007FF82734A3E0  jmp 0x00007FF7E7671138
-[-] user32.dll!SetWindowLongPtrW [JMP]
-    [*] 00007FF82734B7C0  jmp 0x00007FF7E7670D78
-[-] user32.dll!SetWindowLongW [JMP]
-    [*] 00007FF827350F10  jmp 0x00007FF7E7670CB8
-[-] user32.dll!GetKeyState [JMP]
-    [*] 00007FF82735E0E0  jmp 0x00007FF7E7670C58
-[-] user32.dll!GetMessageW [JMP]
-    [*] 00007FF827361B80  jmp 0x00007FF7E7671078
-[-] user32.dll!SystemParametersInfoW [JMP]
-    [*] 00007FF827363350  jmp 0x00007FF7E76712B8
-[-] user32.dll!GetAsyncKeyState [JMP]
-    [*] 00007FF827363ED0  jmp 0x00007FF7E7670BF8
-[-] user32.dll!GetMessageA [JMP]
-    [*] 00007FF8273686F0  jmp 0x00007FF7E76710D8
-[-] user32.dll!SystemParametersInfoA [JMP]
-    [*] 00007FF827368AC0  jmp 0x00007FF7E7671318
-[-] user32.dll!SetWindowsHookExW [JMP]
-    [*] 00007FF82736B2C0  jmp 0x00007FF7E7670E38
-[-] user32.dll!ExitWindowsEx [JMP]
-    [*] 00007FF82736BF20  jmp 0x00007FF7E7671378
-[-] user32.dll!SetWindowLongA [JMP]
-    [*] 00007FF82736C850  jmp 0x00007FF7E7670D18
-[-] user32.dll!SetWindowLongPtrA [JMP]
-    [*] 00007FF82736C8B0  jmp 0x00007FF7E7670DD8
-[-] user32.dll!SetWindowsHookExA [JMP]
-    [*] 00007FF82738F500  jmp 0x00007FF7E7670E98
+[-] CreateWindowExA 
+[-] CreateWindowExW 
+[-] PeekMessageA 
+[-] PeekMessageW 
+[-] SetWindowLongPtrW 
+[-] SetWindowLongW 
+[-] GetKeyState 
+[-] GetMessageW 
+[-] SystemParametersInfoW 
+[-] GetAsyncKeyState 
+[-] GetMessageA 
+[-] SystemParametersInfoA 
+[-] SetWindowsHookExW 
+[-] ExitWindowsEx 
+[-] SetWindowLongA 
+[-] SetWindowLongPtrA 
+[-] SetWindowsHookExA 
     
     
 >>Hooks in win32u.dll<<
-[-] win32u.dll!NtUserSetProp [JMP]
-    [*] 00007FF824D019B0  jmp 0x00007FF7E7670B98
-[-] win32u.dll!NtUserShowWindow [JMP]
-    [*] 00007FF824D01B10  jmp 0x00007FF7E7671018
-[-] win32u.dll!NtUserGetKeyboardState [JMP]
-    [*] 00007FF824D01EF0  jmp 0x00007FF7E76711F8
-[-] win32u.dll!NtUserAttachThreadInput [JMP]
-    [*] 00007FF824D02C10  jmp 0x00007FF7E7671258
-[-] win32u.dll!NtUserRegisterRawInputDevices [JMP]
-    [*] 00007FF824D0A4B0  jmp 0x00007FF7E7670EF8
+[-] NtUserSetProp 
+[-] NtUserShowWindow 
+[-] NtUserGetKeyboardState 
+[-] NtUserAttachThreadInput 
+[-] NtUserRegisterRawInputDevices 
+
+Total: 55 hooks
