@@ -1,4 +1,4 @@
-Hooks redirect to EDR hooking.dll umppc*****.dll for example umppc16606.dll
+Hooks redirect to "EDR hooking.dll" >> umppc*****.dll for example umppc16606.dll
 
 >>Hooks in ntdll.dll<<
 [-] NtDeviceIoControlFile 
