@@ -1,5 +1,4 @@
 >>Hooks in ntdll.dll<<
-
 [-] ntdll.dll!LdrLoadDll [JMP]
     [*] 00007FF827606A10  jmp 0x00007FF7E7670418
 [-] ntdll.dll!RtlAddVectoredExceptionHandler [JMP]
@@ -47,7 +46,6 @@
     
     
 >>Hooks in KernelBase.dll<<
-
 [-] KernelBase.dll!CreateProcessInternalW [JMP]
     [*] 00007FF8251BA040  jmp 0x00007FF7E7670B38
 [-] KernelBase.dll!CopyFileExW [JMP]
@@ -58,31 +56,37 @@
     [*] 00007FF825277FE0  jmp 0x00007FF7E7670A18
     
     
-# **Hooks in combase.dll**    
+>>Hooks in combase.dll<<    
 [-] combase.dll!CoGetInstanceFromIStorage [JMP]
     [*] 00007FF8270066C0  jmp 0x00007FF7E7671438
     
-# **Hooks in crypt32.dll**    
+    
+>>Hooks in crypt32.dll<<    
 [-] crypt32.dll!CryptUnprotectData [JMP]
     [*] 00007FF824FC4E70  jmp 0x00007FF7E76714F8
     
-**Hooks in ole32.dll**    
+    
+>>Hooks in ole32.dll<<    
 [-] ole32.dll!CoGetObject [JMP]
     [*] 00007FF826A6E180  jmp 0x00007FF7E76713D8
     
-**Hooks in samcli.dll**
+    
+>>Hooks in samcli.dll<<
 [-] samcli.dll!NetUserAdd [JMP]
     [*] 00007FF81D11D230  jmp 0x00007FF7E7671618
+    
 
-**Hooks in shell32.dll**
+>>Hooks in shell32.dll<<
 [-] shell32.dll!Shell_NotifyIconW [JMP]
     [*] 00007FF825A7AC60  jmp 0x00007FF7E7671498
+    
     
 **Hooks in sspicli.dll**
 [-] sspicli.dll!InitializeSecurityContextW [JMP]
     [*] 00007FF824BC1350  jmp 0x00007FF7E76715B8
 [-] sspicli.dll!LsaCallAuthenticationPackage [JMP]
     [*] 00007FF824BC2E80  jmp 0x00007FF7E7671558
+    
     
 **Hooks in user32.dll**   
 [-] user32.dll!CreateWindowExA [JMP]
@@ -120,7 +124,8 @@
 [-] user32.dll!SetWindowsHookExA [JMP]
     [*] 00007FF82738F500  jmp 0x00007FF7E7670E98
     
-**Hooks in win32u.dll** 
+    
+>>Hooks in win32u.dll<<
 [-] win32u.dll!NtUserSetProp [JMP]
     [*] 00007FF824D019B0  jmp 0x00007FF7E7670B98
 [-] win32u.dll!NtUserShowWindow [JMP]
