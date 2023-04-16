@@ -1,3 +1,5 @@
+Hooks redirect to EDR hooking.dll umppc*****.dll for example umppc16606.dll
+
 >>Hooks in ntdll.dll<<
 [-] ntdll.dll!NtDeviceIoControlFile [JMP]
     [*] 00007FF9A62ED133  jmp 0x00007FF9A636ADCA
