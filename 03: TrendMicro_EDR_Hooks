@@ -1,0 +1,119 @@
+Hooks redirect to "EDR hooking.dll" tmmon64.dll
+
+
+>>Hooks in ntdll.dll<<
+[-] LdrUnloadDll 
+[-] LdrLoadDll 
+[-] NtDeviceIoControlFile 
+[-] NtSetInformationThread 
+[-] NtQueryInformationThread 
+[-] NtMapViewOfSection 
+[-] NtUnmapViewOfSection 
+[-] NtTerminateProcess 
+[-] NtWriteVirtualMemory 
+[-] NtReadVirtualMemory 
+[-] NtQueueApcThread 
+[-] NtCreateThread 
+[-] NtProtectVirtualMemory 
+[-] NtCreateMutant 
+[-] NtCreateThreadEx 
+[-] NtGetContextThread 
+[-] NtLoadDriver 
+[-] NtSetContextThread 
+[-] NtUnmapViewOfSectionEx 
+
+
+>>Hooks in kernel32.dll<<
+[-] CreateMailslotA 
+[-] CreateMailslotW 
+[-] MoveFileW 
+[-] CreateRemoteThread 
+[-] CreateNamedPipeA 
+[-] CopyFileA 
+[-] CopyFileExA 
+[-] MoveFileA 
+[-] MoveFileWithProgressA 
+
+
+>>Hooks in KernelBase.dll<<
+[-] CreateProcessInternalA 
+[-] CreateProcessInternalW 
+[-] CreateRemoteThreadEx 
+[-] DeleteFileA 
+[-] DeleteFileW 
+[-] FindFirstFileW 
+[-] FindFirstFileExW 
+[-] CreateFileA 
+[-] CreateFileW 
+[-] MoveFileWithProgressW 
+[-] CopyFileW 
+[-] CopyFileExW 
+[-] VirtualAlloc 
+[-] ImpersonateLoggedOnUser 
+[-] WriteProcessMemory 
+[-] FindFirstFileA 
+[-] VirtualAllocEx 
+[-] CreateNamedPipeW 
+[-] FindFirstFileExA 
+
+
+>>Hooks in advapi32.dll<<
+[-] OpenEventLogW 
+[-] CloseEventLog 
+[-] EncryptFileW 
+[-] CreateServiceA 
+[-] CreateServiceW 
+[-] ClearEventLogA 
+[-] ClearEventLogW 
+[-] OpenEventLogA 
+
+
+>>Hooks in samcli.dll<<
+[-] NetUserGetLocalGroups 
+[-] NetUserGetInfo 
+[-] NetUserEnum 
+[-] NetUserAdd 
+[-] NetUserChangePassword 
+[-] NetUserDel 
+[-] NetUserGetGroups 
+[-] NetUserSetGroups 
+[-] NetUserSetInfo 
+
+
+>>Hooks in sechost.dll<<
+[-] !StartServiceW 
+[-] !OpenServiceW 
+[-] !OpenServiceA 
+[-] !StartServiceA 
+
+
+>>Hooks in user32.dll<<
+[-] SetWindowsHookExW 
+[-] SetWindowsHookA 
+[-] SetWindowsHookExA 
+[-] SetWindowsHookW 
+[-] MessageBoxA 
+[-] MessageBoxExA 
+[-] MessageBoxExW 
+[-] MessageBoxW 
+
+
+>>Hooks in wevtapi.dll<<
+[-] EvtOpenSession 
+[-] EvtClose 
+[-] EvtClearLog 
+
+
+>>Hooks in win32u.dll<<
+[-] NtUserShowWindow 
+
+
+>>Hooks in wininet.dll<<
+[-] InternetCreateUrlW 
+[-] InternetConnectW 
+[-] InternetConnectA 
+[-] InternetCreateUrlA 
+[-] InternetOpenUrlA 
+[-] InternetOpenUrlW 
+
+Total: 86 hooks
