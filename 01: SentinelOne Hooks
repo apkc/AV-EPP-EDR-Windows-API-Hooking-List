@@ -53,12 +53,12 @@ Hooks redirect to EDR hooking.dll inprocessclient64.dll
 [-] Shell_NotifyIconW 
     
     
-**Hooks in sspicli.dll**
+>>Hooks in sspicli.dll<<
 [-] InitializeSecurityContextW 
 [-] LsaCallAuthenticationPackage 
     
     
-**Hooks in user32.dll**   
+>>Hooks in user32.dll<<   
 [-] CreateWindowExA 
 [-] CreateWindowExW 
 [-] PeekMessageA 
@@ -76,8 +76,6 @@ Hooks redirect to EDR hooking.dll inprocessclient64.dll
 [-] SetWindowLongA 
 [-] SetWindowLongPtrA 
 [-] SetWindowsHookExA 
-    
-    
 >>Hooks in win32u.dll<<
 [-] NtUserSetProp 
 [-] NtUserShowWindow 
