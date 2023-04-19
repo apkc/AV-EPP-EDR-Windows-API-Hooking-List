@@ -1,6 +1,6 @@
-Hooks redirect to !EDR hooking.dll! >> inprocessclient64.dll
+Usermode Hooks which redirect to inprocessclient64.dll
 
->>Hooks in ntdll.dll<<
+Usermode Hooks in ntdll.dll >> inline hooking (jmp)
 [-] LdrLoadDll 
 [-] RtlAddVectoredExceptionHandler 
 [-] NtSetInformationThread 
@@ -24,41 +24,40 @@ Hooks redirect to !EDR hooking.dll! >> inprocessclient64.dll
 [-] NtSetContextThread 
 [-] KiUserApcDispatcher 
     
-    
->>Hooks in KernelBase.dll<<
+
+Usermode Hooks in kernelbase.dll >> inline hooking (jmp)
 [-] CreateProcessInternalW 
 [-] CopyFileExW 
 [-] LoadLibraryA 
 [-] UnhandledExceptionFilter 
     
-    
->>Hooks in combase.dll<<    
+
+Usermode Hooks in combase.dll >> inline hooking (jmp)
 [-] CoGetInstanceFromIStorage 
     
     
-    
->>Hooks in crypt32.dll<<    
+Usermode Hooks in crypt32.dll >> inline hooking (jmp)
 [-] CryptUnprotectData 
     
-    
->>Hooks in ole32.dll<<    
+
+Usermode Hooks in ole32.dll >> inline hooking (jmp)
 [-] CoGetObject 
     
-    
->>Hooks in samcli.dll<<
+
+Usermode Hooks in samcli.dll >> inline hooking (jmp)
 [-] NetUserAdd 
     
 
->>Hooks in shell32.dll<<
+Usermode Hooks in shell32.dll >> inline hooking (jmp)
 [-] Shell_NotifyIconW 
     
-    
->>Hooks in sspicli.dll<<
+
+Usermode Hooks in sspicli.dll >> inline hooking (jmp)
 [-] InitializeSecurityContextW 
 [-] LsaCallAuthenticationPackage 
     
-    
->>Hooks in user32.dll<<   
+
+Usermode Hooks in user32.dll >> inline hooking (jmp)
 [-] CreateWindowExA 
 [-] CreateWindowExW 
 [-] PeekMessageA 
@@ -78,7 +77,7 @@ Hooks redirect to !EDR hooking.dll! >> inprocessclient64.dll
 [-] SetWindowsHookExA 
 
 
->>Hooks in win32u.dll<<
+Usermode Hooks in win32u.dll >> inline hooking (jmp)
 [-] NtUserSetProp 
 [-] NtUserShowWindow 
 [-] NtUserGetKeyboardState 
