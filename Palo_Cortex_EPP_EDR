@@ -21,3 +21,4 @@ Usermode Hooks in kernelbase.dll >> inline hooking (jmp) >> cyvrtrap.dll
 [-] CreateFileA 
 [-] VirtualAlloc 
 [-] VirtualAllocEx 
+
