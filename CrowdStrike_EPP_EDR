@@ -1,6 +1,6 @@
-Hooks redirect to "EDR hooking.dll" >> umppc*****.dll for example umppc16606.dll
+Usermode Hooks which redirect to umppc*****.dll
 
->>Hooks in ntdll.dll<<
+Usermode Hooks in ntdll.dll >> inline hooking (jmp)
 [-] NtDeviceIoControlFile 
 [-] NtSetInformationThread 
 [-] NtAllocateVirtualMemory 
@@ -22,7 +22,8 @@ Hooks redirect to "EDR hooking.dll" >> umppc*****.dll for example umppc16606.dll
 [-] NtSuspendThread 
 [-] NtUnmapViewOfSectionEx 
     
->>Hooks in win32u.dll<<    
+
+Usermode Hooks in win32u.dll >> inline hooking (jmp)
 [-] NtUserSetProp 
 [-] NtUserSetWindowLong 
 [-] NtUserSetWindowsHookEx 
