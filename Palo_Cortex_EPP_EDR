@@ -8,3 +8,16 @@ Usermode Hooks in ntdll.dll >> inline hooking (jmp) >> cyvrtrap.dll
 Usermode Hooks in ntdll.dll >> based on PUSH; RET Hooks >> cyinjct.dll
 [-] NtMapViewOfSection 
 [-] NtUnmapViewOfSection
+
+
+Usermode Hooks in kernel32.dll >> inline hooking (jmp) >> cyvrtrap.dll
+[-] CreateRemoteThread
+[-] VirtualAlloc
+[-] VirtualAllocEx 
+
+
+Usermode Hooks in kernelbase.dll >> inline hooking (jmp) >> cyvrtrap.dll
+[-] CreateRemoteThreadEx 
+[-] CreateFileA 
+[-] VirtualAlloc 
+[-] VirtualAllocEx 
