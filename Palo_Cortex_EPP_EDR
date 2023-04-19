@@ -1,10 +1,10 @@
-Hooks redirect to !EDR hooking.dll! >> cyvrtrap.dll 
+Usermode Hooks which redirect to cyvrtrap.dll or cyinjct.dll
 
->>Hooks in ntdll.dll<< based on inline hooking (jmp)
+Usermode Hooks in ntdll.dll >> inline hooking (jmp) >> cyvrtrap.dll
 [-] NtSetInformationProcess 
 [-] NtFreeVirtualMemory 
 [-] NtCreateThreadEx 
 
->>Hooks in ntdll.dll<< based on PUSH; RET hook: >> cyinjct.dll
+Usermode Hooks in ntdll.dll >> based on PUSH; RET Hooks >> cyinjct.dll
 [-] NtMapViewOfSection 
 [-] NtUnmapViewOfSection
