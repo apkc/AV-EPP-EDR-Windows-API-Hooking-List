@@ -1,6 +1,6 @@
-Hooks redirect to "EDR hooking.dll" tmmon64.dll
+Usermode Hooks which redirect to tmmon64.dll
 
->>Hooks in ntdll.dll<<
+Usermode Hooks in ntdll.dll >> inline hooking (jmp)
 [-] LdrUnloadDll 
 [-] LdrLoadDll 
 [-] NtDeviceIoControlFile 
@@ -22,7 +22,7 @@ Hooks redirect to "EDR hooking.dll" tmmon64.dll
 [-] NtUnmapViewOfSectionEx 
 
 
->>Hooks in kernel32.dll<<
+Usermode Hooks in kernel32.dll >> inline hooking (jmp)
 [-] CreateMailslotA 
 [-] CreateMailslotW 
 [-] MoveFileW 
@@ -34,7 +34,7 @@ Hooks redirect to "EDR hooking.dll" tmmon64.dll
 [-] MoveFileWithProgressA 
 
 
->>Hooks in KernelBase.dll<<
+Usermode Hooks in kernelbase.dll >> inline hooking (jmp)
 [-] CreateProcessInternalA 
 [-] CreateProcessInternalW 
 [-] CreateRemoteThreadEx 
@@ -56,7 +56,7 @@ Hooks redirect to "EDR hooking.dll" tmmon64.dll
 [-] FindFirstFileExA 
 
 
->>Hooks in advapi32.dll<<
+Usermode Hooks in advapi32.dll >> inline hooking (jmp)
 [-] OpenEventLogW 
 [-] CloseEventLog 
 [-] EncryptFileW 
@@ -67,7 +67,7 @@ Hooks redirect to "EDR hooking.dll" tmmon64.dll
 [-] OpenEventLogA 
 
 
->>Hooks in samcli.dll<<
+Usermode Hooks in samcli.dll >> inline hooking (jmp)
 [-] NetUserGetLocalGroups 
 [-] NetUserGetInfo 
 [-] NetUserEnum 
@@ -79,14 +79,14 @@ Hooks redirect to "EDR hooking.dll" tmmon64.dll
 [-] NetUserSetInfo 
 
 
->>Hooks in sechost.dll<<
+Usermode Hooks in sechost.dll >> inline hooking (jmp)
 [-] !StartServiceW 
 [-] !OpenServiceW 
 [-] !OpenServiceA 
 [-] !StartServiceA 
 
 
->>Hooks in user32.dll<<
+Usermode Hooks in user32.dll >> inline hooking (jmp)
 [-] SetWindowsHookExW 
 [-] SetWindowsHookA 
 [-] SetWindowsHookExA 
@@ -97,17 +97,17 @@ Hooks redirect to "EDR hooking.dll" tmmon64.dll
 [-] MessageBoxW 
 
 
->>Hooks in wevtapi.dll<<
+Usermode Hooks in wevtapi.dll >> inline hooking (jmp)
 [-] EvtOpenSession 
 [-] EvtClose 
 [-] EvtClearLog 
 
 
->>Hooks in win32u.dll<<
+Usermode Hooks in win32u.dll >> inline hooking (jmp)
 [-] NtUserShowWindow 
 
 
->>Hooks in wininet.dll<<
+Usermode Hooks in wininet.dll >> inline hooking (jmp)
 [-] InternetCreateUrlW 
 [-] InternetConnectW 
 [-] InternetConnectA 
