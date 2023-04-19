@@ -22,3 +22,5 @@ Usermode Hooks in kernelbase.dll >> inline hooking (jmp) >> cyvrtrap.dll
 [-] VirtualAlloc 
 [-] VirtualAllocEx 
 
+
+Total: 12 hooks
